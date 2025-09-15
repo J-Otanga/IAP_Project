@@ -1,5 +1,5 @@
 <?php
-$conf['site_name'] = 'ICS B';
+$conf['site_name'] = 'ICS B Academy';
 $conf['admin_email'] = 'admin@icsbacademy.com';
 $conf['site_url'] = 'https://localhost/tol';
 
