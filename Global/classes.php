@@ -1,6 +1,6 @@
 <?php
 
-class HelloWorld {
+class classes {
     public function greet() {
         return "Hello, ICS!";
     }
@@ -10,7 +10,7 @@ class HelloWorld {
     }
 
     }
-$hello = new HelloWorld();
+$hello = new classes();
 
 print $hello ->greet();
 print $hello->today();
