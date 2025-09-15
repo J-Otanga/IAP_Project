@@ -1,11 +1,9 @@
 <?php
-require 'ClassAutolad.php';
+    require 'ClassAutoLoad.php';
 
-
-
-
-$form->signIn();
-print $hello->today();
-print $layout->header($conf);
-print $layout->footer($conf);
+    // Using the class methods
+    print $layout->header($conf);
+    
+    $form->signin();
+    print $layout->footer($conf);
 ?>

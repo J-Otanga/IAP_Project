@@ -1,11 +1,10 @@
 <?php
-require 'ClassAutolad.php';
+require 'ClassAutoLoad.php';
+
+ print $layout->header($conf);
+    
+    $form->signup();
+    print $layout->footer($conf);
 
 
-
-
-$form->signup();
-print $hello->today();
-print $layout->header($conf);
-print $layout->footer($conf);
 ?>

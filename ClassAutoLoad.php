@@ -1,4 +1,8 @@
 <?php
+require 'Plugins/PHPMailer/src/Exception.php';
+require 'Plugins/PHPMailer/src/PHPMailer.php';
+require 'Plugins/PHPMailer/src/SMTP.php';
+
 require 'conf.php';
 
 $directories = ['Layouts', 'Global', 'Forms'];
@@ -11,9 +15,9 @@ spl_autoload_register(function ($class_name) use ($directories) {
             return;
         }
     }
-});
+}); 
 
-$hello = new classes();
+$objSendMail = new SendMail();
 $layout = new layouts();
 $form = new forms();
 
