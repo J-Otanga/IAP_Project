@@ -1,9 +1,8 @@
 <?php
-    require 'ClassAutoLoad.php';
 
-    // Using the class methods
-    print $layout->header($conf);
-    
-    $form->signin();
-    print $layout->footer($conf);
+$ObjLayout->header($conf);
+$ObjLayout->navbar($conf);
+$ObjLayout->banner($conf);
+$ObjLayout->form_content($conf, $ObjForm);
+$ObjLayout->footer($conf);
 ?>

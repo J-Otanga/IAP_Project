@@ -17,7 +17,9 @@ spl_autoload_register(function ($class_name) use ($directories) {
     }
 }); 
 
-$objSendMail = new SendMail();
-$layout = new layouts();
-$form = new forms();
+$ObjSendMail = new SendMail();
+$ObjLayout = new Layouts();
+$ObjForm = new Forms();
+
+
 
